@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hola mi Khaleesi</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/892/692/922/howl-s-moving-castle-studio-ghibli-fantasy-art-clouds-daylight-hd-wallpaper-preview.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajustar imagen al tamaño del contenedor */
+    background-position: center; /* Centrar la imagen */
+    color: white; /* Cambiar color del texto a blanco para mayor contraste */
+  }
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    font-style: italic; /* Letra en cursiva */
+    cursor: pointer;
+    animation: move 3s infinite alternate; /* Animación que hace que el texto se mueva por todos lados */
+  }
+h1::after {
+    content: " ❤️"; /* Agrega un corazón al final del texto */
+  @keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: 	#FFFF00; /* Color morado */
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Cambia la fuente del botón */
+    background-color: 	#FFFF00; /* Color morado más oscuro al pasar el cursor */
+  }
+</style>
+</head>
+<body>
+<h1 onclick="alert('Te quiero mucho')">Te quiero mucho ❤️</h1></h1>
+<button onclick="mostrarMensaje()">oprime aqui si tambien me quieres</button>
+<script>
+function mostrarMensaje() {
+  alert('¡me debes mil besos');
+}
+</script>
+</body>
+</html>
+
+
+   
